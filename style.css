@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, poppins;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
+    padding: 1em 0 3em ;
+    position: relative;
+    color: #fff;
+}
+
+.hero .nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 13%;
+    align-items: center;
+    /* background:rgba(255, 255, 255, 0.1); */
+    z-index: 10;
+}
+
+.nav img{
+    width: 4em;
+    cursor: pointer;
+}
+
+.nav ul{
+    display: flex;
+    flex: 0.3;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav ul li{
+    list-style: none;
+}
+
+.nav ul li a:hover{
+    opacity: 0.6;
+    transition: .8s;
+}
+
+.nav ul li a, .nav a, .main a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1rem;  
+   font-weight: 500;
+}
+
+/* main */
+.btn{
+    background:rgba(255, 255, 255, 0.1);
+    border: 0.1em solid magenta;
+    border-radius: 0.4em;
+    padding: 0.6em 1.5em;
+    color: #fff;
+    display: inline-block;
+    /* z-index: 10; */
+}
+
+.main{
+   margin-top: 20em;
+   padding: 1em 13%;
+   width: 100%;
+}
+
+.main .textbox{
+    width: 50%;
+    position: relative;
+}
+
+.main h1{
+    font-size: 3rem;
+    /* color: #000;
+    color:rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0.8px #fff; */
+    color: #fff;
+    font-weight: bolder;
+    /* transition: all 20; */
+}
+
+.main h1 span{
+    font-size: 3rem;
+    color: #000;
+    color:rgba(0, 0, 0, 0.1);
+    -webkit-text-stroke: 0.8px #fff;
+    font-weight: bolder;
+    /* transition: all 20; */
+}
+
+.main p{
+    padding: 1em 0 3em;
+    line-height: 1.8em;
+    font-size: 1rem;
+}
+
+.main img{
+    width: 20em;
+    position: absolute;
+    right: 15em;
+    top: 8em;
+    border-right: 0.1em dotted #8569ff;
+    border-bottom: 0.3em solid #6d00ff;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.main .sidebar{
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient( #8569ff, #006786);
+    z-index: 1;
+} 
+
+.btn:hover{
+    opacity: 0.6;
+    transition: .5s;
+}
