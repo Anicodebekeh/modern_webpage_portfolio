@@ -78,7 +78,7 @@
 }
 
 .main h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     /* color: #000;
     color:rgba(0, 0, 0, 0.1);
     -webkit-text-stroke: 0.8px #fff; */
@@ -99,7 +99,8 @@
 .main p{
     padding: 1em 0 3em;
     line-height: 1.8em;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 
 .main img{
