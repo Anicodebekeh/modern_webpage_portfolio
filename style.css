@@ -27,6 +27,7 @@
     /* background:rgba(24, 24, 24, 0.6); */
     /* border-bottom: 0.1px solid #fff; */
     z-index: 10;
+    box-shadow: 0.5px 0.5px 5px #fff;
 }
 
 .nav img{
@@ -100,7 +101,7 @@
 .main p{
     padding: 1em 0 2em;
     line-height: 1.8em;
-    font-size: 1.1rem;
+    font-size: 1.1girem;
     font-weight: 200;
 }
 
@@ -211,5 +212,19 @@
 .hero #projects div a svg:hover{
     fill: #6d00ff 
 }
+
+.contact-svg{
+    fill: #fff;
+    padding-right: 0.5em;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.contact-svg:hover{
+    transform: translateX(0.3em);
+    fill: #000;
+}
+
+
 
 
