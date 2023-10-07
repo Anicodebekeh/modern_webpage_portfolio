@@ -2,6 +2,7 @@ const nav = document.querySelector('.nav')
 const projectSection = document.querySelector('#projects');
 const scrollOptions = {
     // rootMargin: "10px 0px 0px 0px"
+    threshold:0.6
 };
 
 const main = new IntersectionObserver(function (entries, main){

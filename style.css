@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
-    padding: 1em 0 3em ;
+    padding: 1em 0 0;
     position: relative;
     color: #fff;
 }
@@ -139,13 +139,12 @@
     justify-content: space-between ;
     align-items: center;
     flex-wrap: wrap;
-    margin: 9em 0 3em;
+    margin: 10em 0 9em;
 }
 
 .hero #projects div{
     width: 21em;
     height: 20em;
-    border: 0.1em solid magenta;
     border-top-right-radius: 0.9em;
     border-bottom-left-radius: 0.9em;
     text-align: center;
@@ -175,7 +174,7 @@
 .hero #projects div:nth-child(1){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/yelpcamp.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -185,7 +184,7 @@
 .hero #projects div:nth-child(2){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/blogpost.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,7 +194,7 @@
 .hero #projects div:nth-child(3){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/getdadsjoke.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -225,6 +224,18 @@
     background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
     z-index: 10;
     box-shadow: 0.5px 0.5px 5px #fff;
+}
+
+footer{
+    /* margin: 0 auto; */
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 1em 0;
+    background-color: #000;
+    font-size: 0.8rem;
 }
 
 
