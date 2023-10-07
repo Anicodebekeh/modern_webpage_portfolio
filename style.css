@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, poppins;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 .hero{
@@ -27,7 +27,7 @@
     /* background:rgba(24, 24, 24, 0.6); */
     /* border-bottom: 0.1px solid #fff; */
     z-index: 10;
-    box-shadow: 0.5px 0.5px 5px #fff;
+    transition: .5s;
 }
 
 .nav img{
@@ -70,10 +70,9 @@
 }
 
 .main{
-   margin-top: 20em;
+   margin-top: 400px;
    padding: 1em 13%;
    width: 100%;
-   margin-bottom: 2em;
 }
 
 .main .textbox{
@@ -113,6 +112,7 @@
     z-index: 2;
     background: #8569ff;
     box-shadow: 0.5px 0.5px 5px #fff;
+    margin-top: 5em;
 }
 
 .main .sidebar{
@@ -133,16 +133,13 @@
 .hero #projects{
     display: flex;
     position: relative;
-    /* margin-top: 20em; */
     padding: 1em 13%;
     width: 100%;
     z-index: 10;
-    /* gap: 3.5em; */
     justify-content: space-between ;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 0.1em solid magenta; */
-    margin: 5em 0 3em;
+    margin: 9em 0 3em;
 }
 
 .hero #projects div{
@@ -173,7 +170,6 @@
     font-size:  1rem;
     line-height: 1.5em;
     font-weight: 200;
-    /* padding-top: 2em; */
 }
 
 .hero #projects div:nth-child(1){
@@ -225,6 +221,11 @@
     fill: #000;
 }
 
+.nav-scroll{
+    background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
+    z-index: 10;
+    box-shadow: 0.5px 0.5px 5px #fff;
+}
 
 
 
