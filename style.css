@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, poppins;
+    scroll-behavior: smooth;
 }
 
 .hero{
@@ -26,6 +27,7 @@
     /* background:rgba(24, 24, 24, 0.6); */
     /* border-bottom: 0.1px solid #fff; */
     z-index: 10;
+    box-shadow: 0.5px 0.5px 5px #fff;
 }
 
 .nav img{
@@ -99,8 +101,8 @@
 .main p{
     padding: 1em 0 2em;
     line-height: 1.8em;
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.1girem;
+    font-weight: 200;
 }
 
 .main img{
@@ -128,7 +130,7 @@
     transition: .5s;
 }
 
-.hero .projects{
+.hero #projects{
     display: flex;
     position: relative;
     /* margin-top: 20em; */
@@ -143,7 +145,7 @@
     margin: 5em 0 3em;
 }
 
-.hero .projects div{
+.hero #projects div{
     width: 21em;
     height: 20em;
     border: 0.1em solid magenta;
@@ -156,25 +158,25 @@
     transition: .5s;
 }
 
-.hero .projects div:hover{
+.hero #projects div:hover{
     opacity: 0.8;
 }
 
-.hero .projects h1{
+.hero #projects h1{
     font-size:  1.3rem;
     font-weight: bold;
     padding: 0 0 4em;  
     text-shadow: 0.5px 0.5px #dee2e6;
 }
 
-.hero .projects p{
+.hero #projects p{
     font-size:  1rem;
     line-height: 1.5em;
     font-weight: 200;
     /* padding-top: 2em; */
 }
 
-.hero .projects div:nth-child(1){
+.hero #projects div:nth-child(1){
     background-image: linear-gradient(
         to bottom,
         rgba(22, 22, 21, 0.5),
@@ -184,7 +186,7 @@
         background-position: center;
 }
 
-.hero .projects div:nth-child(2){
+.hero #projects div:nth-child(2){
     background-image: linear-gradient(
         to bottom,
         rgba(22, 22, 21, 0.5),
@@ -194,7 +196,7 @@
         background-position: center;
 }
 
-.hero .projects div:nth-child(3){
+.hero #projects div:nth-child(3){
     background-image: linear-gradient(
         to bottom,
         rgba(22, 22, 21, 0.5),
@@ -203,12 +205,26 @@
         background-size: cover;
         background-position: center;
 }
-.hero .projects div a svg{
+.hero #projects div a svg{
     fill: #fff;  
 }
 
-.hero .projects div a svg:hover{
+.hero #projects div a svg:hover{
     fill: #6d00ff 
 }
+
+.contact-svg{
+    fill: #fff;
+    padding-right: 0.5em;
+    transition: all 0.5s;
+    display: inline-block;
+}
+
+.contact-svg:hover{
+    transform: translateX(0.3em);
+    fill: #000;
+}
+
+
 
 
