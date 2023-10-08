@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, poppins;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 .hero{
@@ -22,10 +22,8 @@
     left: 0;
     justify-content: space-between;
     width: 100%;
-    padding: 0.4em 13%;
+    padding: 0.5em 13%;
     align-items: center;
-    /* background:rgba(24, 24, 24, 0.6); */
-    /* border-bottom: 0.1px solid #fff; */
     z-index: 10;
     transition: .5s;
 }
@@ -46,17 +44,23 @@
     list-style: none;
 }
 
+.nav ul li a{
+    transition: all .5s;
+    fill: #fff;
+}
+
 .nav ul li a:hover{
-    opacity: 0.6;
-    transition: .8s;
+    transition: all .8s;
+    fill: #000;
 }
 
 .nav ul li a, .nav a, .main a{
    text-decoration: none;
-   color: #fff;
-   font-size: 1rem;  
-   font-weight: 500;
 }
+
+/* .links-on-scroll{
+    fill: #fff;
+} */
 
 /* main */
 .btn{
@@ -78,14 +82,13 @@
 .main .textbox{
     width: 50%;
     position: relative;
-    /* margin-bottom: 2em; */
 }
 
 .main h1{
     font-size: 3.3rem;
-    color: #fff;
+    color: #000;
     font-weight: bolder;
-    /* text-shadow: 1px 1px #dee2e6; */
+    text-shadow: 1px 1px #fff;
 }
 
 .main h1 span{
@@ -94,7 +97,7 @@
     color:rgba(0, 0, 0, 0.1);
     -webkit-text-stroke: 0.8px #fff;
     font-weight: bolder;
-    /* transition: all 20; */
+    text-shadow: none;
 }
 
 .main p{
@@ -139,7 +142,7 @@
     justify-content: space-between ;
     align-items: center;
     flex-wrap: wrap;
-    margin: 10em 0 9em;
+    margin: 11em 0 9em;
 }
 
 .hero #projects div{
@@ -161,8 +164,8 @@
 .hero #projects h1{
     font-size:  1.3rem;
     font-weight: bold;
-    padding: 0 0 4em;  
-    text-shadow: 0.5px 0.5px #dee2e6;
+    padding: 0 0 5em;  
+    text-shadow: 0.5px 0.5px #fff;
 }
 
 .hero #projects p{
@@ -204,12 +207,8 @@
     fill: #fff;  
 }
 
-.hero #projects div a svg:hover{
-    fill: #6d00ff 
-}
-
 .contact-svg{
-    fill: #fff;
+    fill: #000;
     padding-right: 0.5em;
     transition: all 0.5s;
     display: inline-block;
@@ -217,7 +216,8 @@
 
 .contact-svg:hover{
     transform: translateX(0.3em);
-    fill: #000;
+    transform: translateY(0.1em);
+    fill: #fff;
 }
 
 .nav-scroll{
@@ -227,16 +227,30 @@
 }
 
 footer{
-    /* margin: 0 auto; */
     width: 100%;
-    z-index: 10;
+    z-index: 0;
     position: relative;
     margin-bottom: 0;
     text-align: center;
     padding: 1em 0;
-    background-color: #000;
+    background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
     font-size: 0.8rem;
 }
 
+/* .disappear{
+    display: none;
+    transition: .5s;
+} */
+
+
+.contact-details{
+    display: none;
+    transition: all .5s;
+}
+
+.show-contact{
+    fill: #fff;
+    color: #fff;
+}
 
 
