@@ -10,7 +10,7 @@
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
-    padding: 1em 0 3em ;
+    padding: 1em 0 0;
     position: relative;
     color: #fff;
 }
@@ -22,12 +22,10 @@
     left: 0;
     justify-content: space-between;
     width: 100%;
-    padding: 0.4em 13%;
+    padding: 0.5em 13%;
     align-items: center;
-    /* background:rgba(24, 24, 24, 0.6); */
-    /* border-bottom: 0.1px solid #fff; */
     z-index: 10;
-    box-shadow: 0.5px 0.5px 5px #fff;
+    transition: .5s;
 }
 
 .nav img{
@@ -46,17 +44,23 @@
     list-style: none;
 }
 
+.nav ul li a{
+    transition: all .5s;
+    fill: #fff;
+}
+
 .nav ul li a:hover{
-    opacity: 0.6;
-    transition: .8s;
+    transition: all .8s;
+    fill: #000;
 }
 
 .nav ul li a, .nav a, .main a{
    text-decoration: none;
-   color: #fff;
-   font-size: 1rem;  
-   font-weight: 500;
 }
+
+/* .links-on-scroll{
+    fill: #fff;
+} */
 
 /* main */
 .btn{
@@ -70,23 +74,21 @@
 }
 
 .main{
-   margin-top: 20em;
+   margin-top: 400px;
    padding: 1em 13%;
    width: 100%;
-   margin-bottom: 2em;
 }
 
 .main .textbox{
     width: 50%;
     position: relative;
-    /* margin-bottom: 2em; */
 }
 
 .main h1{
     font-size: 3.3rem;
-    color: #fff;
+    color: #000;
     font-weight: bolder;
-    /* text-shadow: 1px 1px #dee2e6; */
+    text-shadow: 1px 1px #fff;
 }
 
 .main h1 span{
@@ -95,7 +97,7 @@
     color:rgba(0, 0, 0, 0.1);
     -webkit-text-stroke: 0.8px #fff;
     font-weight: bolder;
-    /* transition: all 20; */
+    text-shadow: none;
 }
 
 .main p{
@@ -113,6 +115,7 @@
     z-index: 2;
     background: #8569ff;
     box-shadow: 0.5px 0.5px 5px #fff;
+    margin-top: 5em;
 }
 
 .main .sidebar{
@@ -133,22 +136,18 @@
 .hero #projects{
     display: flex;
     position: relative;
-    /* margin-top: 20em; */
     padding: 1em 13%;
     width: 100%;
     z-index: 10;
-    /* gap: 3.5em; */
     justify-content: space-between ;
     align-items: center;
     flex-wrap: wrap;
-    /* border: 0.1em solid magenta; */
-    margin: 5em 0 3em;
+    margin: 11em 0 9em;
 }
 
 .hero #projects div{
     width: 21em;
     height: 20em;
-    border: 0.1em solid magenta;
     border-top-right-radius: 0.9em;
     border-bottom-left-radius: 0.9em;
     text-align: center;
@@ -165,21 +164,20 @@
 .hero #projects h1{
     font-size:  1.3rem;
     font-weight: bold;
-    padding: 0 0 4em;  
-    text-shadow: 0.5px 0.5px #dee2e6;
+    padding: 0 0 5em;  
+    text-shadow: 0.5px 0.5px #fff;
 }
 
 .hero #projects p{
     font-size:  1rem;
     line-height: 1.5em;
     font-weight: 200;
-    /* padding-top: 2em; */
 }
 
 .hero #projects div:nth-child(1){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/yelpcamp.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -189,7 +187,7 @@
 .hero #projects div:nth-child(2){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/blogpost.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -199,7 +197,7 @@
 .hero #projects div:nth-child(3){
     background-image: linear-gradient(
         to bottom,
-        rgba(22, 22, 21, 0.5),
+        rgba(22, 22, 21, 0.3),
         rgba(16, 16, 17, 0.9)),url(/img/getdadsjoke.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -209,12 +207,8 @@
     fill: #fff;  
 }
 
-.hero #projects div a svg:hover{
-    fill: #6d00ff 
-}
-
 .contact-svg{
-    fill: #fff;
+    fill: #000;
     padding-right: 0.5em;
     transition: all 0.5s;
     display: inline-block;
@@ -222,9 +216,41 @@
 
 .contact-svg:hover{
     transform: translateX(0.3em);
-    fill: #000;
+    transform: translateY(0.1em);
+    fill: #fff;
 }
 
+.nav-scroll{
+    background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
+    z-index: 10;
+    box-shadow: 0.5px 0.5px 5px #fff;
+}
 
+footer{
+    width: 100%;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 1em 0;
+    background: linear-gradient(to right, #904282, #6d00ff 70%, #6d00ff 70% );
+    font-size: 0.8rem;
+}
+
+/* .disappear{
+    display: none;
+    transition: .5s;
+} */
+
+
+.contact-details{
+    display: none;
+    transition: all .5s;
+}
+
+.show-contact{
+    fill: #fff;
+    color: #fff;
+}
 
 
