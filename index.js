@@ -1,8 +1,10 @@
 const nav = document.querySelector(".nav");
 const contactTab = document.querySelector(".contact-tab");
 const contactDetails = document.querySelector(".contact-details");
-const projectSection = document.querySelector("#projects");
+// const projectSection = document.querySelector("#projects");
+const img = document.querySelector("img");
 const menu = document.querySelector('.menu');
+const close = document.querySelector('.close');
 const navLink = document.querySelector('.nav-links');
 const scrollOptions = {
   threshold: 0.6,
@@ -18,7 +20,7 @@ const main = new IntersectionObserver(function (entries, main) {
   });
 }, scrollOptions);
 
-main.observe(projectSection);
+main.observe(img);
 
 contactTab.addEventListener("click", function (e) {
   contactDetails.classList.remove("contact-details");
@@ -26,7 +28,10 @@ contactTab.addEventListener("click", function (e) {
 
 
 menu.addEventListener('click', function(){
-    console.log(navLink)
     navLink.style.display='block'
+    close.style.display='block'
 })
 
+close.addEventListener('click', function(e){
+    navLink.style.display='none'
+})
