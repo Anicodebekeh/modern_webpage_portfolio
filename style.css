@@ -34,14 +34,25 @@
 }
 
 .nav ul{
-    display: flex;
+    display: inline-block;
     flex: 0.3;
     text-align: center;
     justify-content: space-between;
 }
 
+.nav ul .close{
+    display: none;
+}
+
+.nav .gist .menu{
+    display: none;
+}
+
+
 .nav ul li{
     list-style: none;
+    display: inline-block;
+    padding: 0 1em;
 }
 
 .nav ul li a{
@@ -58,9 +69,6 @@
    text-decoration: none;
 }
 
-/* .links-on-scroll{
-    fill: #fff;
-} */
 
 /* main */
 .btn{
@@ -70,7 +78,7 @@
     padding: 0.6em 1.5em;
     color: #fff;
     display: inline-block;
-    /* z-index: 10; */
+
 }
 
 .main{
@@ -237,11 +245,6 @@ footer{
     font-size: 0.8rem;
 }
 
-/* .disappear{
-    display: none;
-    transition: .5s;
-} */
-
 
 .contact-details{
     display: none;
@@ -253,22 +256,31 @@ footer{
     color: #fff;
 }
 
-
 /* small screen -------------------------------------------------*/
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
     .hero .nav {
         z-index: 10;
         padding: 0.8em 13%;
     }
+
   .nav ul{
-    flex-direction: column;
-    background-color: #000;
+    padding-bottom: 1em;
+    background: linear-gradient( #8569ff, #006786);
     position: absolute;
     right: 0;
     top: 0;
     width: 40%;
     height: 100vh;
+    padding-top: 1em;
+    box-shadow: 0.5px 0.5px 5px #fff;
+    transition: .5s;
     display: none;
+  }
+
+
+  .nav ul li {
+    padding: 1em;
+    display: block;
   }
 
   .main{
@@ -318,7 +330,22 @@ footer{
 }
 
 .cloud{
-    padding-right: 0.7em;
+    padding-right: 2em;
+    fill: #fff;
 }
+
+.nav .gist .menu{
+    display: inline-block;
+    fill: #fff;
+}
+
+.close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: #fff;
+    padding: none;
+}
+
 
 }
