@@ -96,7 +96,6 @@
     font-size: 3.3rem;
     color: #000;
     font-weight: bolder;
-    text-shadow: 1px 1px #fff;
 }
 
 .main h1 span{
@@ -105,7 +104,6 @@
     color:rgba(0, 0, 0, 0.1);
     -webkit-text-stroke: 0.8px #fff;
     font-weight: bolder;
-    text-shadow: none;
 }
 
 .main p{
@@ -196,7 +194,7 @@
     background-image: linear-gradient(
         to bottom,
         rgba(22, 22, 21, 0.3),
-        rgba(16, 16, 17, 0.9)),url(/img/blogpost.png);
+        rgba(16, 16, 17, 0.9)),url(/img/multipage\ website.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -216,7 +214,7 @@
 }
 
 .contact-svg{
-    fill: #000;
+    fill: #fff;
     padding-right: 0.5em;
     transition: all 0.5s;
     display: inline-block;
@@ -225,7 +223,7 @@
 .contact-svg:hover{
     transform: translateX(0.3em);
     transform: translateY(0.1em);
-    fill: #fff;
+    fill: #000;
 }
 
 .nav-scroll{
